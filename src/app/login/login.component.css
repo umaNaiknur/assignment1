@@ -1,0 +1,24 @@
+form {
+    border: outset 1px rgb(79, 109, 106);
+    box-shadow: 10px 10px 20px rgb(118, 119, 117);
+    width: 450px;
+    margin-left: 300px;
+    margin-top: 150px;
+}
+
+input {
+    width: 400px;
+    margin-left: 20px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+label {
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: large;
+}
+
+button {
+    margin-left: 200px;
+    margin-bottom: 20px;
+}

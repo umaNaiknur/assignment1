@@ -1,0 +1,22 @@
+<p>login works!</p>
+<div class="container">
+    <div class="col-md-6">
+        <form [formGroup]="loginForm" (ngSubmit)="login()" method="POST" action="../dashboard/dashboard.component.html">
+            <h3 style="color: rgb(228, 101, 27);text-align: center;margin-bottom: 20px;">Log-in Form</h3>
+            <div class="form-group">
+                <label for="exampleInputEmail1">User Id</label>
+                <input type="text" name="umail" class=" form-control " aria-describedby="emailHelp " formControlName="umail">
+                <span style="color: red;" *ngIf="umail?.invalid && umail?.touched">enter valid email id
+                </span>
+
+            </div>
+            <div class="form-group ">
+                <label for="exampleInputPassword1 ">Password</label>
+                <input type="password" class="form-control " id="exampleInputPassword1 " formControlName="upass">
+                <span style="color: red; " *ngIf="upass?.invalid && upass?.touched ">Enter the valid password!!!</span>
+            </div>
+
+            <button type="submit " class="btn btn-primary " onclick="login">Log in</button>
+        </form>
+    </div>
+</div>
